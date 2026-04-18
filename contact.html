@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | NovaStudio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light site-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-semibold brand-mark" href="index.html">NovaStudio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contactNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="contactNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-dark rounded-pill px-4" href="contact.html">Start Project</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="inner-hero">
+    <div class="container text-center">
+      <span class="eyebrow">Contact</span>
+      <h1 class="fw-bold mt-3">Start a conversation about your next website.</h1>
+      <p class="text-secondary mx-auto inner-hero-text">
+        Clean form styling, modern cards, and responsive spacing make this page practical and submission-ready.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-pad pt-0">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="soft-card h-100">
+            <span class="eyebrow">Contact details</span>
+            <h3 class="fw-bold mt-2 mb-4">Let’s build something elegant.</h3>
+
+            <div class="contact-info-block">
+              <h6>Email</h6>
+              <p class="text-secondary mb-0">hello@novastudio.com</p>
+            </div>
+
+            <div class="contact-info-block">
+              <h6>Phone</h6>
+              <p class="text-secondary mb-0">+91 98765 43210</p>
+            </div>
+
+            <div class="contact-info-block mb-0">
+              <h6>Office Hours</h6>
+              <p class="text-secondary mb-0">Mon - Fri, 10:00 AM to 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="soft-card">
+            <span class="eyebrow">Send a message</span>
+            <h3 class="fw-bold mt-2 mb-4">Project inquiry form</h3>
+
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-control form-control-lg" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" class="form-control form-control-lg" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Subject</label>
+                  <input type="text" class="form-control form-control-lg" name="subject" placeholder="Project subject" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Tell us about your project" required></textarea>
+                </div>
+                <div class="col-12 d-grid d-md-flex">
+                  <button type="submit" class="btn btn-dark btn-lg rounded-pill px-4">Send Message</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section with Cards -->
+<section class="section-pad pt-0">
+  <div class="container">
+    <div class="section-head text-center mx-auto mb-5">
+      <span class="eyebrow">FAQs</span>
+      <h2 class="fw-bold mt-2">Common questions answered</h2>
+      <p class="text-secondary">Everything you need to know before reaching out.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-8 mx-auto">
+        <div class="accordion nova-accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                How long does a typical project take?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary">
+                A standard 3-page Bootstrap project takes between 3 to 7 days depending on complexity. Larger sites with custom features may take up to 2–3 weeks.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Do you use Bootstrap for every project?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary">
+                Bootstrap 5 is our primary framework for rapid UI development. We layer custom CSS on top to create unique, premium-feeling visual systems tailored to each client.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Will the site be mobile responsive?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary">
+                Absolutely. Every page we build is tested across mobile, tablet, and desktop. Bootstrap's grid system ensures consistent behavior on all screen sizes.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                Can I host the site on GitHub Pages or Netlify?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary">
+                Yes! All our deliverables are static HTML/CSS/JS sites that deploy perfectly on GitHub Pages and Netlify with zero configuration.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Confirm Modal (triggered when contact form is submitted) -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content nova-modal text-center p-4">
+      <div class="confirm-icon mx-auto mb-3">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <h5 class="fw-bold">Message Sent!</h5>
+      <p class="text-secondary mb-4">Thanks for reaching out. We'll get back to you within 24 hours.</p>
+      <button class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Back to Home</button>
+    </div>
+  </div>
+</div>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0">© 2026 NovaStudio. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
